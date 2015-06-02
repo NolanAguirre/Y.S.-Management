@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <head>
+        <link rel="stylesheet" href="css/bootstrap-3.3.4-dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/css.css" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"/>
+        <title>Y.S. Management</title>
+    </head>
+    <body ng-controller="myController as vm">
+        <div class="header">
+            <div class="subHeader">
+            </div>
+            <div class="cats">
+                <div ng-repeat="cat in vm.cats">
+                    <div ng-click="cat.show()"class="cat">
+                        {{cat.catType}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainBody">
+            <div ng-style="vm.homeCss" class="home"></div>
+            <div ng-style="vm.floorPlansCss" class="floorPlans">floor</div>
+            <div ng-style="vm.photosCss" class="Photos">
+            
+            </div>
+            <div ng-style="vm.residentsCss" class="residents">residents</div>
+            <div ng-style="vm.applyCss" class="apply">
+                <div>
+                </div>
+                <div>
+                    <form>
+                    </form>
+                    <button ng-click="vm.showApplied()">Submit</button>
+                </div>
+            </div>
+            <div ng-style="vm.appliedCss" class="applied">
+            thank you
+            </div>
+            <div ng-style="vm.contactUsCss" class="contactUs">contact</div>
+            <div ng-style="vm.aboutUsCss" class="aboutUs">about</div>
+        </div>
+        <div class="footer">
+            <div class ="subFooter">
+                <div class="hours">
+                    <p>Killeen, Tx <br>
+                       123 abd street <br>
+                       Monday-Friday: 9a.m.-5p.m. <br>
+                       Saturday-Sunday: closed
+                    </p>
+                </div>
+                <div class="logo"><img style="width:auto; height:100%;"src="photos/demoLogo.jpg"/></div>
+                <div class="contact">
+                    <p>Phone:121-236-569-897 <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="javascript/angular.min.js"></script>
+        <script src="javascript/script.js"></script>
+    </body>
+</html>
