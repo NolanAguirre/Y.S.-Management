@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="css/bootstrap-3.3.4-dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/css.css" />
+        <link rel="stylesheet" media="" href="css/scrolling.css">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"/>
         <title>Y.S. Management</title>
@@ -10,6 +11,7 @@
     <body ng-controller="myController as vm">
         <div class="header">
             <div class="subHeader">
+                <img src="photos/filledLogo.png" style="height:100%;width:8%;margin-left:2.5%;">
             </div>
             <div class="cats">
                 <div ng-repeat="cat in vm.cats">
@@ -20,10 +22,24 @@
             </div>
         </div>
         <div class="mainBody">
-            <div ng-style="vm.homeCss" class="home"></div>
+            <div ng-style="vm.homeCss" class="home"> Work in progress, basic tasks should work. Most information is just filler. the photo tab sure is cool though.</div>
             <div ng-style="vm.floorPlansCss" class="floorPlans">floor</div>
             <div ng-style="vm.photosCss" class="Photos">
-            
+                <div class="photoContainer">
+                    <div class="photobanner">
+                        <img class="first" src="photos/demoOne.jpg" alt="">
+                        <img src="photos/demoTwo.jpg" alt="">
+                        <img src="photos/demoThree.jpg" alt="">
+                        <img src="photos/demoFour.jpg" alt="">
+                        <img src="photos/demoFive.jpg" alt="">
+                        <img src="photos/demoSix.jpg" alt="">
+                        <img  src="photos/demoOne.jpg" alt="">
+                        <img src="photos/demoTwo.jpg" alt="">
+                        <img src="photos/demoThree.jpg" alt="">
+                        <img src="photos/demoFour.jpg" alt="">
+                        
+                    </div>
+                </div>
             </div>
             <div ng-style="vm.residentsCss" class="residents">residents</div>
             <div ng-style="vm.applyCss" class="apply">
@@ -50,7 +66,7 @@
                        Saturday-Sunday: closed
                     </p>
                 </div>
-                <div class="logo"><img style="width:auto; height:100%;"src="photos/demoLogo.jpg"/></div>
+                <div class="logo"><img style="width:auto; height:100%;"src="photos/filledLogo.png"/></div>
                 <div class="contact">
                     <p>Phone:121-236-569-897 <br>
                     </p>
