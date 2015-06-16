@@ -10,11 +10,9 @@ angular.module('app',[]).
             catType:'Floor Plans',
             show:showFloorPlans,
             floorTypes:[{
-                image: 'photos/demoOne.jpg',
-                css:{'height':'50%'}
+                image: 'photos/demoOne.jpg'
                         },{
-                image:'photos/demoTwo.jpg',
-                css:{'height':'50%'}// floor plan two
+                image:'photos/demoTwo.jpg'
                 }]
             },{
                 catType:'Photos',
