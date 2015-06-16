@@ -1,0 +1,22 @@
+{
+  "name": "Y.S.-Management",
+  "version": "1.0.0",
+  "description": "uh, test",
+  "main": "index.js",
+  "scripts": {
+    "test": "uhTest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bobby7083/Y.S.-Management.git"
+  },
+  "author": "Nolan Aguirre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bobby7083/Y.S.-Management/issues"
+  },
+  "homepage": "https://github.com/bobby7083/Y.S.-Management",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
+}

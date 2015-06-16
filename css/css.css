@@ -2,6 +2,7 @@ html, body{
 height:120%
 }
 .header{
+z-index:1;
 position:fixed;
 width:100%;
 height:15%;
@@ -26,15 +27,16 @@ transition:1s;
 .cat:hover{
 background-color:pink;
 }
- 
 .mainBody{
-padding-top:7.5%;
-height:95%;
+padding-top:7.25%;
+height:100%;
 }
 .footer{
 height:10%;
+background-color:yellow;
 }
 .subFooter{
+background-color:blue;
 height:80%;
 width:74%;
 border-bottom: 3px solid;

@@ -1,6 +1,5 @@
 angular.module('app',[]).
     controller('myController', apartmentController);
-    
     function apartmentController(){
         var vm = this;
         vm.cats = [
@@ -11,9 +10,11 @@ angular.module('app',[]).
             catType:'Floor Plans',
             show:showFloorPlans,
             floorTypes:[{
-                image:'',
+                image: 'photos/demoOne.jpg',
+                css:{'height':'50%'}
                         },{
-                image:'',// floor plan two
+                image:'photos/demoTwo.jpg',
+                css:{'height':'50%'}// floor plan two
                 }]
             },{
                 catType:'Photos',
@@ -22,8 +23,8 @@ angular.module('app',[]).
                 catType:'Residents',
                 show:showResidents                
             },{
-                catType:'Apply',
-                show:showApply
+                catType:'Rental Application',
+                show:showRentalApp
             },{
                 catType:'Contact Us',
                 show:showContactUs
@@ -31,12 +32,12 @@ angular.module('app',[]).
                 catType:'About Us',
                 show:showAboutUs
             }];
+        vm.floorPlan = vm.cats[1];
         vm.homeCss = {'display':'block'};
         vm.floorPlansCss ={'display':'none'};
         vm.photosCss ={'display':'none'};
         vm.residentsCss ={'display':'none'};
-        vm.applyCss ={'display':'none'};
-        vm.appliedCss={'display':'none'};
+        vm.rentalAppCss ={'display':'none'};
         vm.contactUsCss ={'display':'none'};
         vm.aboutUsCss ={'display':'none'};
         function showHome(){
@@ -55,13 +56,9 @@ angular.module('app',[]).
             resetDisplay();
             vm.residentsCss ={'display':'block'};
         }
-       function showApply(){
+       function showRentalApp(){
             resetDisplay();
-            vm.applyCss ={'display':'block'};
-        }
-        vm.showApplied = function(){
-            resetDisplay();
-            vm.appliedCss={'display':'block'};
+            vm.rentalAppCss ={'display':'block'};
         }
         function showContactUs(){
             resetDisplay();
@@ -76,14 +73,9 @@ angular.module('app',[]).
         vm.floorPlansCss ={'display':'none'};
         vm.photosCss ={'display':'none'};
         vm.residentsCss ={'display':'none'};
-        vm.applyCss ={'display':'none'};
-        vm.appliedCss={'display':'none'};
+        vm.rentalAppCss ={'display':'none'};
         vm.contactUsCss ={'display':'none'};
         vm.aboutUsCss ={'display':'none'};
         }
-
-}
-        
-        
-        
-    
+    }
+ 
