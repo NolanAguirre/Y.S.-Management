@@ -1,2 +1,1 @@
-rewrite of Website
-Website for Y.S.-Management, Townhouse rentals.
+rewrite of Website for Y.S.-Management, Townhouse rentals.
