@@ -1,0 +1,18 @@
+.homeHeader h1{
+    font-size:5em;
+    font-family:unknown;
+}
+.homeBody{
+    margin-left:10%;
+}
+.homeBody p{
+    font-family:uknown;
+}
+.redirectionFooter{
+    margin-bottom:4%;
+    margin-left:10%;
+}
+.redirectionSlide{
+    height:100%;
+    width:33.3%;
+}

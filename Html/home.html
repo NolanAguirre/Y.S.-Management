@@ -1,0 +1,17 @@
+<div class="home">
+    <div class="homeHeader">
+        <h1>About Y.S. Management</h1>
+    </div>
+    <div class="homeBody">
+        <p>all the things about us that are really cool</p>
+        <div class="redirectionFooter">
+            <div ng-repeat="slide in vm.redirection">
+                <div class="redirectionSlide"ng-click="slide.redirect()">
+                    <img ng-src="slide.image" />
+                    <h6>{{slide.title}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
