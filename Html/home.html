@@ -1,14 +1,14 @@
 <div class="home">
     <div class="homeHeader">
-        <h1>About Y.S. Management</h1>
+        <h1>Welcome To Y.S. Management</h1>
     </div>
     <div class="homeBody">
         <p>all the things about us that are really cool</p>
-        <div class="redirectionFooter">
-            <div ng-repeat="slide in vm.redirection">
-                <div class="redirectionSlide"ng-click="slide.redirect()">
-                    <img ng-src="slide.image" />
-                    <h6>{{slide.title}}</h6>
+        <div class="homeSlides">
+            <div ng-repeat="slide in vm.homeSlides">
+                <div class="homeSlide">
+                    <img style="height:150px;width:100%;"ng-src="photos/{{slide.image}}" />
+                    <h3>{{slide.title}}</h3>
                 </div>
             </div>
         </div>

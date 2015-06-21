@@ -8,11 +8,15 @@
 .homeBody p{
     font-family:uknown;
 }
-.redirectionFooter{
-    margin-bottom:4%;
-    margin-left:10%;
+.homeSlides{
+    width:50%;
+    height:10px;
+    margin-top:50%;
+    margin-left:20%;
+    background-color:yellow;
 }
-.redirectionSlide{
-    height:100%;
-    width:33.3%;
+.homeSlide{
+    height:10%;
+    float:left;
+    width:33%;
 }
