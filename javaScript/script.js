@@ -27,6 +27,15 @@ angular.module('app',[]).
             new slide('About us','Html/aboutUs.html')
     ];
         vm.currentSlide = vm.slides[0];
+        vm.slides[1].plans = [{
+            image:'photos/demoOne.jpg',
+            sqft:'1127 Sq. Ft.',
+            price:'725$ /Monthly'
+            },{
+            image:'photos/demoTwo.jpg',
+            sqft:'1327 Sq. Ft.',
+            price:'750$ /Monthly'         
+        }]
         vm.homeSlides = [
             new homeSlide('demoOne.jpg','View More!'),
             new homeSlide('demoTwo.jpg','Apply Now!'),

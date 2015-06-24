@@ -28,7 +28,7 @@ transition:1s;
 background-color:pink;
 }
 .mainBody{
-padding-top:7.25%;
+padding-top:7.5%;
 height:95%;
 }
 .footer{
@@ -51,12 +51,4 @@ padding-left:2px;
 .floorPlan, .home, .aboutUs, .resident, .rentialApplication, .contactUs, .photo{
 height:100%;
 width:100%;
-}
-.logForm input{
-padding-bottom:3px;
-
-}
-.logForm{
-float:right;
-margin-right:10px
 }

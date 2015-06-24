@@ -16,11 +16,6 @@
     </head>
     <body ng-controller="myController as vm">
         <div class="header">
-                <form class="logForm" method="post">
-                    <input type="text" placeholder="Username" /> <br>
-                    <input type="password" placeholder="Password" /> <br>
-                    <button type="submit">Login</button>
-                </form>
             <div class="subHeader">
                 <img src="photos/filledLogo.png" style="height:100%;width:8%;margin-left:2.5%;">
 
@@ -35,7 +30,7 @@
         </div>
         <div class="mainBody">
             <div ng-repeat="slide in vm.slides">
-                <div ng-if="slide.isCurrentSlide()" ng-include="slide.template"></div>
+                <div style="max-width:950px;margin:0px auto;"ng-if="slide.isCurrentSlide()" ng-include="slide.template"></div>
             </div>
         </div>
         <div class="footer">
@@ -43,14 +38,14 @@
                 <div class="hours">
                     <p>
                        Killeen, Tx <br>
-                       123 Bacon Ranch Road <br>
-                       Monday-Friday: 9a.m.-5p.m. <br>
-                       Saturday-Sunday: closed<br>
+                       1500 Bacon Ranch Road <br>
+                       Monday-Sunday: 8:30a.m.-7p.m. 
                     </p>
                 </div>
                 <div class="logo"><img style="width:auto; height:100%;"src="photos/filledLogo.png"/></div>
                 <div class="contact">
-                    <p>Phone:(236)-569-897 <br>
+                    <p>Phone:(254)526-9009 <br>
+                      y.s.management@gmail.com
                     </p>
                 </div>
             </div>
