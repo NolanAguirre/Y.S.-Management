@@ -29,10 +29,12 @@ angular.module('app',[]).
         vm.currentSlide = vm.slides[0];
         vm.slides[1].plans = [{
             image:'photos/demoOne.jpg',
+            description:'Two Story, Storage unit optional. Two Bedroom,, One and a half Bath',
             sqft:'1127 Sq. Ft.',
             price:'725$ /Monthly'
             },{
             image:'photos/demoTwo.jpg',
+            description:'Two Story, Storage unit optional. Two Bedroom,, One and a half Bath',
             sqft:'1327 Sq. Ft.',
             price:'750$ /Monthly'         
         }]
