@@ -7,3 +7,6 @@ background-color:red;
 height:50%;
 background-color:orange;
 }
+.floorPlan img{
+position:relative;
+}

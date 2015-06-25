@@ -1,5 +1,10 @@
 angular.module('app',[]).
     controller('myController', apartmentController);
+    //TODO:
+    //Add map
+    //Add gallery 
+    //Add online issue report
+    //Finish HTML
     function apartmentController(){
         var vm = this;
         function slide(type, template){
@@ -22,9 +27,10 @@ angular.module('app',[]).
             new slide('Floor Plan','Html/floorPlan.html'),
             new slide('Gallery',"Html/gallery.html"),
             new slide('Residents', 'Html/residents.html'),
-            new slide('Rential Application','Html/rentailApplication.html'),
+            new slide('Application','Html/rentailApplication.html'),
             new slide('Contact us','Html/contactUs.html'),
-            new slide('About us','Html/aboutUs.html')
+            new slide('About us','Html/aboutUs.html'),
+            new slide('Map','Html/map.html')
     ];
         vm.currentSlide = vm.slides[0];
         vm.slides[1].plans = [{
@@ -40,8 +46,10 @@ angular.module('app',[]).
         }]
         vm.homeSlides = [
             new homeSlide('demoOne.jpg','View More!'),
-            new homeSlide('demoTwo.jpg','Apply Now!'),
+            new homeSlide('demoTwo.jpg','View Map!'),
             new homeSlide('demoThree.jpg','Learn More!')        
         ]
+        
+       
     }
  

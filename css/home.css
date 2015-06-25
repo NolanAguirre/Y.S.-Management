@@ -8,14 +8,33 @@
     margin-left:7%;
 }
 .homeSlides{
-    width:70%;
-    height:10px;
-    margin-top:70%;
+    width:630px;
+    height:210px;
+    margin-top:75%;
     margin-left:15%;
     background-color:yellow;
 }
 .homeSlide{
     height:10%;
     float:left;
-    width:33%;
+    width:205px;
+    margin-right:2.5px;
+    margin-left:2.5px;
+}
+.homeSlide img{
+width:205px;
+border-radius: 25px;
+
+}
+.slider{
+height:150px;
+width:100%;
+border:2px;
+
+}
+.homeSlide img:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+    z-index:-1;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
 }

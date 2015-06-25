@@ -10,14 +10,16 @@
         <link rel="stylesheet" href="css/floorPlans.css" />
         <link rel="stylesheet" media="" href="css/aboutUs.css">
         <link rel="stylesheet" media="" href="css/home.css">
+        <link rel="stylesheet" media="" href="css/map.css">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"/>
         <title>Y.S. Management</title>
+        
     </head>
     <body ng-controller="myController as vm">
         <div class="header">
             <div class="subHeader">
-                <img src="photos/filledLogo.png" style="height:100%;width:8%;margin-left:2.5%;">
+                <img src="photos/filledLogo.png" style="height:80px;width:120px;margin-left:10px;">
 
             </div>
             <div class="cats">
@@ -30,7 +32,7 @@
         </div>
         <div class="mainBody">
             <div ng-repeat="slide in vm.slides">
-                <div style="max-width:950px;margin:0px auto;"ng-if="slide.isCurrentSlide()" ng-include="slide.template"></div>
+                <div style="max-width:960px;margin:0px auto;"ng-if="slide.isCurrentSlide()" ng-include="slide.template"></div>
             </div>
         </div>
         <div class="footer">
@@ -42,7 +44,7 @@
                        Monday-Sunday: 8:30a.m.-7p.m. 
                     </p>
                 </div>
-                <div class="logo"><img style="width:auto; height:100%;"src="photos/filledLogo.png"/></div>
+                <div class="logo"><img style="width:auto; height:80px;"src="photos/filledLogo.png"/></div>
                 <div class="contact">
                     <p>Phone:(254)526-9009 <br>
                       y.s.management@gmail.com
@@ -50,6 +52,7 @@
                 </div>
             </div>
         </div>
+        
         <script src="javaScript/angular.min.js"></script>
         <script src="javaScript/script.js"></script>
     </body>
