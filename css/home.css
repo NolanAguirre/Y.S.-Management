@@ -1,31 +1,23 @@
 .homeHeader h1 {
     font-size: 5em;
-    font-family: unknown;
 }
 .homeBody p {
-    font-family: uknown;
     margin-left: 7%;
 }
 .homeSlides {
-    width: 65.625%;
+    margin:0px auto;
+    max-width: 630px;
     height: 210px;
-    margin-top: 75%;
-    margin-left: 15%;
 }
 .homeSlide {
-    height: 10%;
     float: left;
-    width: 32.5396825%;
+    max-width:205px;
     margin-right: .3%;
     margin-left: .3%;
 }
 .homeSlide img {
     border-radius: 25px;
-}
-.slider {
-    height: 150px;
-    width: 100%;
-    border: 2px;
+    max-height:135px;
 }
 .homeSlide img:hover {
     transform: scale(1.05);

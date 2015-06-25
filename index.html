@@ -17,41 +17,34 @@
     <title>Y.S. Management</title>
 </head>
 
-<body ng-controller="myController as vm">
+<body  ng-controller="myController as vm">
     <div class="header">
-        <div class="subHeader">
-            <img src="photos/filledLogo.png" style="height:80px;width:120px;margin-left:10px;">
-
-        </div>
+        <img src="photos/filledLogo.png" style="height:80px;width:120px;margin-left:10px;">
         <div class="cats">
-            <div ng-repeat="slide in vm.slides">
-                <div ng-click="slide.show()" class="cat">
-                    {{slide.type}}
-                </div>
+            <div ng-class="{active: cat === vm.currentSlide}" ng-repeat="slide in vm.slides" ng-click="slide.show()" class="cat">
+                {{slide.type}}
             </div>
         </div>
     </div>
     <div class="mainBody">
         <div ng-repeat="slide in vm.slides">
-            <div style="max-width:960px;margin:0px auto;" ng-if="slide.isCurrentSlide()" ng-include="slide.template"></div>
+            <div  ng-if="slide.isCurrentSlide()" ng-include="slide.template"></div>
         </div>
     </div>
     <div class="footer">
-        <div class="subFooter">
             <div class="hours">
                 <p>
-                    Killeen, Tx
-                    <br> 1500 Bacon Ranch Road
-                    <br> Monday-Sunday: 8:30a.m.-7p.m.
+                    Killeen, Tx<br/>
+                    1500 Bacon Ranch Road<br/>
+                    Monday-Sunday: 8:30a.m.-7p.m.
                 </p>
             </div>
-            <div class="logo"><img style="width:auto; height:80px;" src="photos/filledLogo.png" /></div>
+            <div class="logo"><img style="width:auto;height:70px;" src="photos/filledLogo.png" /></div>
             <div class="contact">
-                <p>Phone:(254)526-9009
-                    <br> y.s.management@gmail.com
+                <p>Phone:(254)526-9009<br/>
+                     y.s.management@gmail.com
                 </p>
             </div>
-        </div>
     </div>
 
     <script src="javaScript/angular.min.js"></script>
