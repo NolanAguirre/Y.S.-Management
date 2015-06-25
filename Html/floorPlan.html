@@ -1,13 +1,13 @@
-<div class="floorPlan">
-    <div class="floorPlanHeader">
-            <h3>Floor Plans</h3>
+<div>
+    <div>
+        <h2 class="cenTxt">Floor Plans</h2>
     </div>
-    <div class="floorPlanBody">
+    <div>
         <div ng-repeat="plan in vm.slides[1].plans">
-            <div>
-            <img ng-src="{{plan.image}}">
-            {{plan.sqft}}<br>
-            {{plan.price}}
+            <div class="floorPlanBody">
+                <img ng-src="{{plan.image}}"> {{plan.sqft}}
+                <br> {{plan.price}}
             </div>
         </div>
     </div>
+</div>

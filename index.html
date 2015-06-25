@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
-    <head>
-        <link rel="stylesheet" href="css/bootstrap-3.3.4-dist/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="css/css.css" />
-        <link rel="stylesheet" media="" href="css/photos.css">
-        <link rel="stylesheet" href="css/residents.css"/>
-        <link rel="stylesheet" href="css/floorPlans.css" />
-        <link rel="stylesheet" media="" href="css/aboutUs.css">
-        <link rel="stylesheet" href="css/floorPlans.css" />
-        <link rel="stylesheet" media="" href="css/aboutUs.css">
-        <link rel="stylesheet" media="" href="css/home.css">
-        <link rel="stylesheet" media="" href="css/map.css">
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"/>
-        <title>Y.S. Management</title>
-        
-    </head>
-    <body ng-controller="myController as vm">
-        <div class="header">
-            <div class="subHeader">
-                <img src="photos/filledLogo.png" style="height:80px;width:120px;margin-left:10px;">
 
-            </div>
-            <div class="cats">
-                <div ng-repeat="slide in vm.slides">
-                    <div ng-click="slide.show()"class="cat">
-                        {{slide.type}}
-                    </div>
-                </div>
-            </div>
+<head>
+    <link rel="stylesheet" href="css/bootstrap-3.3.4-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/css.css" />
+    <link rel="stylesheet" media="" href="css/photos.css">
+    <link rel="stylesheet" href="css/residents.css" />
+    <link rel="stylesheet" href="css/floorPlans.css" />
+    <link rel="stylesheet" media="" href="css/aboutUs.css">
+    <link rel="stylesheet" href="css/floorPlans.css" />
+    <link rel="stylesheet" media="" href="css/aboutUs.css">
+    <link rel="stylesheet" media="" href="css/home.css">
+    <link rel="stylesheet" media="" href="css/map.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <title>Y.S. Management</title>
+</head>
+
+<body ng-controller="myController as vm">
+    <div class="header">
+        <div class="subHeader">
+            <img src="photos/filledLogo.png" style="height:80px;width:120px;margin-left:10px;">
+
         </div>
-        <div class="mainBody">
+        <div class="cats">
             <div ng-repeat="slide in vm.slides">
-                <div style="max-width:960px;margin:0px auto;"ng-if="slide.isCurrentSlide()" ng-include="slide.template"></div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class ="subFooter">
-                <div class="hours">
-                    <p>
-                       Killeen, Tx <br>
-                       1500 Bacon Ranch Road <br>
-                       Monday-Sunday: 8:30a.m.-7p.m. 
-                    </p>
-                </div>
-                <div class="logo"><img style="width:auto; height:80px;"src="photos/filledLogo.png"/></div>
-                <div class="contact">
-                    <p>Phone:(254)526-9009 <br>
-                      y.s.management@gmail.com
-                    </p>
+                <div ng-click="slide.show()" class="cat">
+                    {{slide.type}}
                 </div>
             </div>
         </div>
-        
-        <script src="javaScript/angular.min.js"></script>
-        <script src="javaScript/script.js"></script>
-    </body>
+    </div>
+    <div class="mainBody">
+        <div ng-repeat="slide in vm.slides">
+            <div style="max-width:960px;margin:0px auto;" ng-if="slide.isCurrentSlide()" ng-include="slide.template"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="subFooter">
+            <div class="hours">
+                <p>
+                    Killeen, Tx
+                    <br> 1500 Bacon Ranch Road
+                    <br> Monday-Sunday: 8:30a.m.-7p.m.
+                </p>
+            </div>
+            <div class="logo"><img style="width:auto; height:80px;" src="photos/filledLogo.png" /></div>
+            <div class="contact">
+                <p>Phone:(254)526-9009
+                    <br> y.s.management@gmail.com
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="javaScript/angular.min.js"></script>
+    <script src="javaScript/script.js"></script>
+</body>
+
 </html>

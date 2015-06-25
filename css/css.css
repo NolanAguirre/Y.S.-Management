@@ -1,54 +1,57 @@
-html, body{
-height:120%
+html, body {
+    height: 120%
 }
-.header{
-z-index:1;
-position:fixed;
-width:100%;
-height:15%;
-background-color:white;
+img {
+    height: auto;
+    max-width: 100%;
 }
-.subHeader{
-height:70%;
+.header {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 130px;
+    background-color: white;
 }
-.cats{
-border-top: 2px solid gray;
-height:30%;
+.subHeader {
+    height: 70%;
 }
-.cat{
-float: left;
-padding-right:1%;
-padding-left:1%;
-font-size:1.4em;
-width:10.5%;
-text-align:center;
-transition:1s;
+.cats {
+    border-top: 2px solid gray;
+    height: 30%;
 }
-.cat:hover{
-background-color:gray;
+.cat {
+    float: left;
+    padding-right: 1%;
+    padding-left: 1%;
+    font-size: 1.4em;
+    width: 10.5%;
+    text-align: center;
+    transition: 1s;
 }
-.mainBody{
-padding-top:7.5%;
-height:95%;
+.cat:hover {
+    background-color: gray;
 }
-.footer{
-height:10%;
+.mainBody {
+    padding-top:130px;
+    height: 95%;
 }
-.subFooter{
-height:80%;
-width:74%;
-border-bottom: 3px solid;
-margin-left:13%;
-margin-right:13%;
+.footer {
+    height: 10%;
 }
-.hours, .logo, .contact{
-height:90%;
-width:30%;
-float:left;
-border-left: 3px solid;
-padding-left:2px;
+.subFooter {
+    height: 80%;
+    width: 74%;
+    border-bottom: 3px solid;
+    margin-left: 13%;
+    margin-right: 13%;
 }
-.floorPlan, .home, .aboutUs, .resident, .rentialApplication, .contactUs, .photo{
-height:100%;
-width:100%;
+.hours, .logo, .contact {
+    height: 90%;
+    width: 30%;
+    float: left;
+    border-left: 3px solid;
+    padding-left: 2px;
+}
+.cenTxt{
+    text-align:center;
 }

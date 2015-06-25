@@ -1,39 +1,35 @@
-.homeHeader h1{
-    font-size:5em;
-    font-family:unknown;
+.homeHeader h1 {
+    font-size: 5em;
+    font-family: unknown;
 }
-
-.homeBody p{
-    font-family:uknown;
-    margin-left:7%;
+.homeBody p {
+    font-family: uknown;
+    margin-left: 7%;
 }
-.homeSlides{
-    width:630px;
-    height:210px;
-    margin-top:75%;
-    margin-left:15%;
+.homeSlides {
+    width: 65.625%;
+    height: 210px;
+    margin-top: 75%;
+    margin-left: 15%;
 }
-.homeSlide{
-    height:10%;
-    float:left;
-    width:205px;
-    margin-right:2.5px;
-    margin-left:2.5px;
+.homeSlide {
+    height: 10%;
+    float: left;
+    width: 32.5396825%;
+    margin-right: .3%;
+    margin-left: .3%;
 }
-.homeSlide img{
-width:205px;
-border-radius: 25px;
-
+.homeSlide img {
+    border-radius: 25px;
 }
-.slider{
-height:150px;
-width:100%;
-border:2px;
-
+.slider {
+    height: 150px;
+    width: 100%;
+    border: 2px;
 }
 .homeSlide img:hover {
-	transform: scale(1.1);
-	cursor: pointer;
-    z-index:-1;
-	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+    cursor: pointer;
+    z-index: -1;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
