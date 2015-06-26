@@ -8,6 +8,7 @@
     margin:0px auto;
     max-width: 630px;
     height: 210px;
+    min-width:320px;
 }
 .homeSlide {
     float: left;
@@ -17,7 +18,13 @@
 }
 .homeSlide img {
     border-radius: 25px;
-    max-height:135px;
+    max-width:200px;
+}
+@media screen and (max-width:900px){
+    .homeSlide img {
+        border-radius: 15px;
+        max-width:100px;
+    }    
 }
 .homeSlide img:hover {
     transform: scale(1.05);

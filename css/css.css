@@ -26,7 +26,9 @@ body{
 .hours, .logo, .contact {
     float:left;
     max-width:200px;
-    height:75px;
     border-left: 3px solid;
     padding-left: 2px;
     }
+.hours, .logo, .contact  p{
+font-size:1em;
+}
