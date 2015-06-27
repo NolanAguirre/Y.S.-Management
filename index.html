@@ -19,7 +19,7 @@
 
 <body  ng-controller="myController as vm">
     <div class="header">
-        <img src="photos/filledLogo.png" style="height:80px;width:120px;margin-left:10px;">
+        <img src="photos/filledLogo.png" style="height:80px;max-width:120px;margin-left:10px;">
         <div class="cats">
             <div ng-class="{active: cat === vm.currentSlide}" ng-repeat="slide in vm.slides" ng-click="slide.show()" class="cat">
                 {{slide.type}}
@@ -41,12 +41,10 @@
             </div>
             <div class="logo"><img style="width:auto;height:70px;" src="photos/filledLogo.png" /></div>
             <div class="contact">
-                <p>Phone:(254)526-9009<br/>
-                     y.s.management@gmail.com
+                <p>Phone:(254)526-9009
                 </p>
             </div>
     </div>
-
     <script src="javaScript/angular.min.js"></script>
     <script src="javaScript/script.js"></script>
 </body>

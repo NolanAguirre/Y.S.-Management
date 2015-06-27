@@ -20,15 +20,20 @@ body{
 
 .footer {
     border-bottom: 3px solid;
+    max-width:770px;
     margin:0px auto;
     min-height:80px;
     }
 .hours, .logo, .contact {
     float:left;
-    max-width:200px;
+    max-width:250px;
     border-left: 3px solid;
     padding-left: 2px;
+    min-height:75px;
     }
-.hours, .logo, .contact  p{
-font-size:1em;
+@media screen and (max-width:900px){
+    .hours, .logo, .contact {
+        max-width:100px;
+        font-size:.8em;
+    }    
 }

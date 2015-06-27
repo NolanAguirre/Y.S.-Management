@@ -3,11 +3,9 @@ controller('myController', apartmentController);
 //TODO:
 //Fix image resize
 //Fix text resize
-//Make code more mobile friendly
 //Finish HTML
 function apartmentController() {
     var vm = this;
-
     function slide(type, template) {
         this.type = type;
         this.template = template
