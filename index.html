@@ -10,11 +10,36 @@
 </head>
 
 <body>
-    <div ng-view></div>
+    <div class="ysm-navbar-container">
+        <div class="ysm-navbar">
+            <div class="ysm-navbar-left">
+                <div class="ysm-navbar-item">
+                    <img height="60" src="http://placehold.it/200x80&text=Logo+Here"/>
+                </div>
+            </div>
+
+            <div class="ysm-navbar-right">
+                <div class="ysm-navbar-item">
+                    <a href="#/">Home</a>
+                </div>
+
+                <div class="ysm-navbar-item">
+                    <a href="#/gallery">Gallery</a>
+                </div>
+
+                <div class="ysm-navbar-item">
+                    <a href="#/about-us">About Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ysm-main" ng-view></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-route.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/router.js"></script>
+    <script src="js/residence-controller.js"></script>
 </body>
 </html>
