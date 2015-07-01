@@ -1,0 +1,10 @@
+html {
+    font-family: 'Helvetica Neue', Verdana, Arial, sans-serif;
+    color: #333;
+}
+
+body {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
