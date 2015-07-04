@@ -1,39 +1,38 @@
-body{
-    max-width:960px;
-    margin:0px auto;
+body {
+  max-width: 960px;
+  margin: 0px auto;
 }
 .header {
-    background-color: white;
+  background-color: white;
 }
 .cats {
-    border-top: 2px solid gray;
+  border-top: 2px solid gray;
 }
 .cat {
-    display:inline;
-    padding-right: 10px;
-    padding-left: 10px;
-    transition: 1s;
+  display: inline;
+  padding-right: 10px;
+  padding-left: 10px;
+  transition: 1s;
 }
 .cat:hover {
-    background-color: gray;
+  background-color: gray;
 }
-
 .footer {
-    border-bottom: 3px solid;
-    max-width:770px;
-    margin:0px auto;
-    min-height:80px;
-    }
-.hours, .logo, .contact {
-    float:left;
-    max-width:250px;
-    border-left: 3px solid;
-    padding-left: 2px;
-    min-height:75px;
-    }
-@media screen and (max-width:900px){
-    .hours, .logo, .contact {
-        max-width:100px;
-        font-size:.8em;
-    }    
+  border-bottom: 3px solid;
+  max-width: 770px;
+  margin: 0px auto;
+  min-height: 80px;
+}
+.hours, .contact {
+  float: left;
+  max-width: 250px;
+  border-left: 3px solid;
+  padding-left: 2px;
+  min-height: 75px;
+}
+@media screen and (max-width:900px) {
+  .hours, .logo, .contact {
+    max-width: 90px;
+    font-size: .8em;
+  }
 }

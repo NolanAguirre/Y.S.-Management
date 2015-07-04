@@ -1,4 +1,10 @@
+.floorPlanBody{
+    max-width: 960px;
+}
+.floorPlanBody span{
+    display:inline-block;
+}
+}
 .floorPlanBody img{
-max-width:600px;
-max-height:400px;
+    display:inline-block;
 }

@@ -1,0 +1,7 @@
+.socialMedia{
+    max-width: 400px;
+}
+.socialMedia div{
+    display:inline;
+    max-width: 100px;
+}
