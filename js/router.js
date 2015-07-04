@@ -7,9 +7,6 @@ function Router($routeProvider) {
         .when('/', {templateUrl: 'templates/home.html'})
         .when('/gallery', {templateUrl: 'templates/gallery.html'})
         .when('/about-us', {templateUrl: 'templates/about-us.html'})
-        .when('/residence/:letter', {
-            controller: 'ResidenceController as vm',
-            templateUrl: 'templates/residence.html'
-        })
+        .when('/contact-us', { templateUrl: 'templates/contact-us.html'})
         .otherwise({redirectTo: '/'});
 }
