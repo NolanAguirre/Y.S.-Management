@@ -1,0 +1,71 @@
+html {
+    font-family: 'Helvetica Neue', Verdana, Arial, sans-serif;
+    color: #333;
+}
+
+.ysm-main, .ysm-navbar {
+    max-width: 960px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.ysm-navbar-container {
+    background-color: #2c3e50;
+    overflow: hidden;
+}
+
+.ysm-navbar {
+    overflow: hidden;
+}
+
+    .ysm-navbar-left {
+        float: left;
+    }
+
+    .ysm-navbar-right {
+        float: right;
+    }
+
+    .ysm-navbar-item {
+        display: inline-block;
+        line-height: 60px;
+        vertical-align: middle;
+    }
+
+        .ysm-navbar-item + .ysm-navbar-item {
+            padding-left: 30px;
+        }
+
+        .ysm-navbar-item img {
+            display: block;
+        }
+
+        .ysm-navbar-item a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+
+            .ysm-navbar-item a:hover {
+                color: #bdc3c7;
+            }
+
+.ysm-logo img {
+    max-height: 60px;
+}
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+form{
+    max-width: 400px;
+    margin: 0px auto;
+}
