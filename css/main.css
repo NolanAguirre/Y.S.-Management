@@ -69,3 +69,12 @@ form{
     max-width: 400px;
     margin: 0px auto;
 }
+.gallery img{
+    margin-top: 3px;
+}
+.floor-plan img{
+    float:left;
+}
+.floor-plan p{
+    height:400px;
+}
