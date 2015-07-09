@@ -74,7 +74,8 @@ form{
 }
 .floor-plan img{
     float:left;
+    padding-right: 15px;
 }
-.floor-plan p{
-    height:400px;
+.floor-plan div{
+    height:360px;
 }
