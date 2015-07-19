@@ -70,25 +70,12 @@ form{
     margin: 0px auto;
 }
 .gallery img{
-    max-width: 100%;
-    padding-top: 3px;
+    margin-top: 3px;
 }
 .floor-plan img{
     float:left;
-    max-width: 100%;
-    padding-right: 10px;
+    padding-right: 15px;
 }
-.floor-plan{
-    max-width: 100%;
-    height: 400px;
-}
-.floor-plan-text{
-    max-width:330px;
-    float:left
-}
-.floor-plan-text ul{
-    font-size: 1.1em;
-}
-.floor-plan-text div{
-    max-height:360px;
+.floor-plan div{
+    height:360px;
 }
