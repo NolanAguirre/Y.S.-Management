@@ -1,2 +1,2 @@
 # Y.S.-Management
-demonstration of more scalable gallery set up
+Website for Y.S.-Management, Townhouse rentals.
