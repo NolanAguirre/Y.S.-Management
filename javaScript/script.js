@@ -1,81 +1,51 @@
-angular.module('app',[]).
-    controller('myController', apartmentController);
-    function apartmentController(){
-        var vm = this;
-        vm.cats = [
-            { // categories 
-            catType:'Home',
-            show:showHome
-            },{
-            catType:'Floor Plans',
-            show:showFloorPlans,
-            floorTypes:[{
-                image: 'photos/demoOne.jpg',
-                css:{'height':'50%'}
-                        },{
-                image:'photos/demoTwo.jpg',
-                css:{'height':'50%'}// floor plan two
-                }]
-            },{
-                catType:'Photos',
-                show:showPhotos
-            },{
-                catType:'Residents',
-                show:showResidents                
-            },{
-                catType:'Rental Application',
-                show:showRentalApp
-            },{
-                catType:'Contact Us',
-                show:showContactUs
-            },{
-                catType:'About Us',
-                show:showAboutUs
-            }];
-        vm.floorPlan = vm.cats[1];
-        vm.homeCss = {'display':'block'};
-        vm.floorPlansCss ={'display':'none'};
-        vm.photosCss ={'display':'none'};
-        vm.residentsCss ={'display':'none'};
-        vm.rentalAppCss ={'display':'none'};
-        vm.contactUsCss ={'display':'none'};
-        vm.aboutUsCss ={'display':'none'};
-        function showHome(){
-            resetDisplay();
-            vm.homeCss = {'display':'block'};
-        }
-        function showFloorPlans(){
-            resetDisplay();
-            vm.floorPlansCss ={'display':'block'};
-        }
-        function showPhotos(){
-            resetDisplay();
-            vm.photosCss ={'display':'block'};
-        }
-        function showResidents(){
-            resetDisplay();
-            vm.residentsCss ={'display':'block'};
-        }
-       function showRentalApp(){
-            resetDisplay();
-            vm.rentalAppCss ={'display':'block'};
-        }
-        function showContactUs(){
-            resetDisplay();
-            vm.contactUsCss ={'display':'block'};
-        }
-        function showAboutUs(){
-            resetDisplay();
-            vm.aboutUsCss ={'display':'block'};
-        }
-        function resetDisplay(){
-        vm.homeCss = {'display':'none'};
-        vm.floorPlansCss ={'display':'none'};
-        vm.photosCss ={'display':'none'};
-        vm.residentsCss ={'display':'none'};
-        vm.rentalAppCss ={'display':'none'};
-        vm.contactUsCss ={'display':'none'};
-        vm.aboutUsCss ={'display':'none'};
-        }
+angular.module('app', []).
+controller('myController', apartmentController);
+//TODO:
+//Fix image resize
+//Fix text resize
+//Finish HTML
+function apartmentController() {
+    var vm = this;
+    function slide(type, template) {
+        this.type = type;
+        this.template = template
     }
- 
+
+    function homeSlide(image, title) {
+        this.image = image;
+        this.title = title;
+    };
+    slide.prototype.isCurrentSlide = function() {
+        return this === vm.currentSlide;
+    };
+
+    slide.prototype.show = function() {
+        vm.currentSlide = this;
+    };
+    vm.slides = [
+        new slide('Home', 'Html/home.html'),
+        new slide('Floor Plan', 'Html/floorPlan.html'),
+        new slide('Application', 'Html/rentailApplication.html'),
+        new slide('Contact us', 'Html/contactUs.html'),
+        new slide('About us', 'Html/aboutUs.html')
+    ];
+    vm.currentSlide = vm.slides[0];
+    vm.slides[1].plans = [{
+        image: 'photos/demoOne.jpg',
+        description: 'Two Story, Storage unit optional. Two Bedroom, One and a half Bath',
+        sqft: '1127 Sq. Ft.',
+        price: '725$ /Monthly'
+    }, {
+        image: 'photos/demoTwo.jpg',
+        description: 'Two Story, Storage unit optional. Two Bedroom, One and a half Bath',
+        sqft: '1327 Sq. Ft.',
+        price: '750$ /Monthly'
+    }]
+    vm.homeSlides = [
+        new homeSlide('demoOne.jpg', 'View More!'),
+        new homeSlide('demoTwo.jpg', 'View Map!'),
+        new homeSlide('demoThree.jpg', 'Learn More!')
+    ]
+
+
+}

@@ -1,52 +1,38 @@
-html, body{
-height:120%
+body {
+  max-width: 960px;
+  margin: 0px auto;
 }
-.header{
-z-index:1;
-position:fixed;
-width:100%;
-height:15%;
-background-color:white;
+.header {
+  background-color: white;
 }
-.subHeader{
-height:70%;
+.cats {
+  border-top: 2px solid gray;
 }
-.cats{
-border-top: 2px solid gray;
-height:30%;
+.cat {
+  display: inline;
+  padding-right: 10px;
+  padding-left: 10px;
+  transition: 1s;
 }
-.cat{
-float: left;
-padding-right:1%;
-padding-left:1%;
-font-size:1.6em;
-width:14.2857%;
-text-align:center;
-transition:1s;
+.cat:hover {
+  background-color: gray;
 }
-.cat:hover{
-background-color:pink;
+.footer {
+  border-bottom: 3px solid;
+  max-width: 770px;
+  margin: 0px auto;
+  min-height: 80px;
 }
-.mainBody{
-padding-top:7.25%;
-height:100%;
+.hours, .contact {
+  float: left;
+  max-width: 250px;
+  border-left: 3px solid;
+  padding-left: 2px;
+  min-height: 75px;
 }
-.footer{
-height:10%;
-background-color:yellow;
-}
-.subFooter{
-background-color:blue;
-height:80%;
-width:74%;
-border-bottom: 3px solid;
-margin-left:13%;
-margin-right:13%;
-}
-.hours, .logo, .contact{
-height:90%;
-width:33.33%;
-float:left;
-border-left: 3px solid;
-padding-left:2px;
+@media screen and (max-width:900px) {
+  .hours, .logo, .contact {
+    max-width: 90px;
+    font-size: .8em;
+  }
 }

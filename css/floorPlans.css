@@ -1,10 +1,10 @@
-.floorPlans{
-height:100%;
-width:100%;
-background-color:red;
+.floorPlanBody{
+    max-width: 960px;
 }
-.floorPlan{
-background-color:orange;
+.floorPlanBody span{
+    display:inline-block;
 }
-.floorPlanInfo{
+}
+.floorPlanBody img{
+    display:inline-block;
 }

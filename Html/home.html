@@ -1,0 +1,15 @@
+<div class="home">
+    <div class="homeHeader">
+        <h2>Welcome To Y.S. Management</h2>
+    </div>
+    <div class="homeBody">
+        <div class="homeSlides">
+            <div ng-repeat="slide in vm.homeSlides">
+                <div class="homeSlide">
+                    <img ng-src="photos/{{slide.image}}" />
+                    <h3 style="text-align:center;">{{slide.title}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
