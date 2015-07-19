@@ -54,7 +54,7 @@ html {
 }
 .google-maps {
     position: relative;
-    padding-bottom: 75%; // This is the aspect ratio
+    padding-bottom: 75%;
     height: 0;
     overflow: hidden;
 }
@@ -70,12 +70,23 @@ form{
     margin: 0px auto;
 }
 .gallery img{
-    margin-top: 3px;
+    max-width: 100%;
+    padding-top: 3px;
 }
 .floor-plan img{
-    float:left;
-    padding-right: 15px;
+    float: left;
+    padding-right: 10px;
 }
-.floor-plan div{
-    height:360px;
+.floor-plan{
+    height: 405px
+}
+.floor-plan-text{
+    float:left;
+    max-width: 330px;
+}
+
+@media screen and (max-device-width: 500px) {
+    .gallery img{
+        width:400px;
+    }
 }
