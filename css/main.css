@@ -73,10 +73,13 @@ form{
    height: 405px
 }
 .gallery img{
-    padding-top:3px; 
+    padding-top:3px;
 }
 @media screen and (max-device-width: 500px) {
    .gallery img{
       width:400px;
    }
+}
+.home-slide{
+    float:left;
 }

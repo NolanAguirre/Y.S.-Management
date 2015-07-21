@@ -1,2 +1,5 @@
 <h1>Home</h1>
-{{vm.hi}}
+
+<div class="home-slide" ng-repeat="slide in vm.slides">
+    <img src="{{slide.image}}" />
+</div>
