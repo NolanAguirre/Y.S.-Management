@@ -33,7 +33,7 @@ html {
     }
 
         .ysm-navbar-item + .ysm-navbar-item {
-            padding-left: 30px;
+            padding-left: 20px;
         }
 
         .ysm-navbar-item img {
@@ -82,5 +82,10 @@ form{
 }
 .home-slide div{
     float:left;
-    padding-right:3px;
+    padding-right:60px;
+    border-radius: 30px;
+}
+.home-img-text{
+    position: absolute;
+    margin-bottom:20px;
 }
