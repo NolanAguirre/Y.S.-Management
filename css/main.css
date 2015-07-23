@@ -33,7 +33,7 @@ html {
     }
 
         .ysm-navbar-item + .ysm-navbar-item {
-            padding-left: 20px;
+            padding-left: 10px;
         }
 
         .ysm-navbar-item img {
