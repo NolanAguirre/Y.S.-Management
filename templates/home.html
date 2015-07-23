@@ -1,5 +1,6 @@
 <h1>Home</h1>
-
-<div class="home-slide" ng-repeat="slide in vm.slides">
-    <img src="{{slide.image}}" />
+<div class="home-slide">
+    <div ng-repeat="slide in vm.slides">
+        <img src="{{slide.image}}" />
+    </div>
 </div>

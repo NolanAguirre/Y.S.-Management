@@ -80,6 +80,7 @@ form{
       width:400px;
    }
 }
-.home-slide{
+.home-slide div{
     float:left;
+    padding-right:3px;
 }
