@@ -81,11 +81,14 @@ form{
    }
 }
 .home-slide div{
+    position: relative;
     float:left;
     padding-right:60px;
     border-radius: 30px;
 }
 .home-img-text{
+    font-family: 'Montserrat', sans-serif;
     position: absolute;
-    margin-bottom:20px;
+    bottom:110px;
+    left:40px;
 }
