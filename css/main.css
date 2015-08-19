@@ -80,15 +80,15 @@ form{
       width:400px;
    }
 }
-.home-slide div{
-    position: relative;
-    float:left;
-    padding-right:60px;
-    border-radius: 30px;
+.home-slide{
+    max-width: 700px;
 }
+.home-slide div{
+    float:left;
+    max-width: 150px;
+}
+
+
 .home-img-text{
     font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    bottom:110px;
-    left:40px;
 }

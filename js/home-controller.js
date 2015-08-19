@@ -5,7 +5,7 @@ HomeController.$inject = ['$routeParams']
 function HomeController($routeParams) {
     var vm = this;
     vm.slides = [{
-        image:'http://placehold.it/150x150/',
+        image:'http://i.imgur.com/crYUY8r.png1',
         link: '#/about-us',
         text:'View map'
     },{
