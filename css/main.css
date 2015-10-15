@@ -17,7 +17,9 @@ html {
 .ysm-navbar {
     overflow: hidden;
 }
-
+    .ysm-navbar a{
+        font-size: 1.25em;
+    }
     .ysm-navbar-left {
         float: left;
     }
@@ -33,7 +35,7 @@ html {
     }
 
         .ysm-navbar-item + .ysm-navbar-item {
-            padding-left: 10px;
+            padding-left: 20px;
         }
 
         .ysm-navbar-item img {
@@ -77,18 +79,28 @@ form{
 }
 @media screen and (max-device-width: 500px) {
    .gallery img{
-      width:400px;
+      max-width:300px;
+   }
+   .home-img{
+       max-width: 70px;
    }
 }
 .home-slide{
-    max-width: 700px;
+    display:block;
+    margin:0 auto;
+    max-width: 480px;
 }
 .home-slide div{
     float:left;
-    max-width: 150px;
+    padding-left:10px; 
 }
-
-
 .home-img-text{
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.home-img{
+    border-radius: 15px;
+}
+.home-body{
+    height:500px;
 }

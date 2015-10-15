@@ -1,8 +1,9 @@
 <h1>Home</h1>
+<div class="home-body"></div>
 <div class="home-slide">
     <div ng-repeat="slide in vm.slides">
         <a ng-href="{{slide.link}}">
-            <img src="{{slide.image}}" />
+            <img class="home-img"src="{{slide.image}}" />
             <p class="home-img-text">{{slide.text}}</p>
         </a>
     </div>
