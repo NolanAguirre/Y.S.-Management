@@ -17,7 +17,13 @@ html {
 .ysm-navbar {
     overflow: hidden;
 }
+<<<<<<< HEAD
 
+=======
+    .ysm-navbar a{
+        font-size: 1.25em;
+    }
+>>>>>>> origin/master
     .ysm-navbar-left {
         float: left;
     }
@@ -33,7 +39,11 @@ html {
     }
 
         .ysm-navbar-item + .ysm-navbar-item {
+<<<<<<< HEAD
             padding-left: 30px;
+=======
+            padding-left: 20px;
+>>>>>>> origin/master
         }
 
         .ysm-navbar-item img {
@@ -58,6 +68,7 @@ html {
     height: 0;
     overflow: hidden;
 }
+<<<<<<< HEAD
 .google-maps iframe {
     position: absolute;
     top: 0;
@@ -71,22 +82,63 @@ form{
 }
 .gallery img{
     max-width: 100%;
+=======
+form{
+>>>>>>> origin/master
     padding-top: 3px;
 }
 .floor-plan img{
     float: left;
     padding-right: 10px;
 }
+<<<<<<< HEAD
 .floor-plan{
     height: 405px
 }
+=======
+>>>>>>> origin/master
 .floor-plan-text{
     float:left;
     max-width: 330px;
 }
+<<<<<<< HEAD
 
 @media screen and (max-device-width: 500px) {
     .gallery img{
         width:400px;
     }
+=======
+.floor-plan{
+   height: 405px
+}
+.gallery img{
+    padding-top:3px;
+}
+@media screen and (max-device-width: 500px) {
+   .gallery img{
+      max-width:300px;
+   }
+   .home-img{
+       max-width: 70px;
+   }
+}
+.home-slide{
+    display:block;
+    margin:0 auto;
+    max-width: 480px;
+}
+.home-slide div{
+    float:left;
+    padding-left:10px; 
+}
+.home-img-text{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.home-img{
+    border-radius: 15px;
+}
+.home-body{
+    height:500px;
+>>>>>>> origin/master
 }

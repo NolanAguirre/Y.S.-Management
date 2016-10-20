@@ -1,0 +1,12 @@
+{
+  "name": "Y.S.-Management",
+  "private": true,
+  "version": "0.0.1",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "start": "http-server ./ localhost -p 3000 "
+  }
+}
